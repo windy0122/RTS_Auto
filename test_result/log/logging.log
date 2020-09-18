@@ -1,0 +1,966 @@
+2020-09-16 11:22:00 INFO api_logging.py 执行出错：'0' != '1'
+- 0
++ 1
+
+2020-09-16 11:22:00 INFO api_logging.py 执行出错：'0' != '1'
+- 0
++ 1
+
+2020-09-16 11:22:00 INFO api_logging.py 执行出错：'0' != '1'
+- 0
++ 1
+
+2020-09-16 11:22:00 INFO api_logging.py 执行出错：'0' != '1'
+- 0
++ 1
+
+2020-09-16 11:22:00 INFO api_logging.py 执行出错：'0' != '1'
+- 0
++ 1
+
+2020-09-16 11:36:16 INFO api_logging.py 执行出错： :: 0 != 1
+2020-09-16 11:36:16 INFO api_logging.py 执行出错： :: 0 != 1
+2020-09-16 11:36:16 INFO api_logging.py 执行出错： :: 0 != 1
+2020-09-16 11:36:16 INFO api_logging.py 执行出错： :: 0 != 1
+2020-09-16 11:36:16 INFO api_logging.py 执行出错： :: 0 != 1
+2020-09-16 13:18:17 api_logging.py my_log [line:39] 执行出错：'1' != '0'
+- 1
++ 0
+
+2020-09-16 13:18:17 api_logging.py my_log [line:39] 执行出错：'1' != '0'
+- 1
++ 0
+
+2020-09-16 13:18:18 api_logging.py my_log [line:39] 执行出错：'1' != '0'
+- 1
++ 0
+
+2020-09-16 13:18:19 api_logging.py my_log [line:39] 执行出错：'1' != '0'
+- 1
++ 0
+
+2020-09-16 13:18:20 api_logging.py my_log [line:39] 执行出错：'1' != '0'
+- 1
++ 0
+
+2020-09-16 13:18:21 api_logging.py my_log [line:39] 执行出错：'1' != '0'
+- 1
++ 0
+
+2020-09-16 13:34:08 api_logging.py my_log [line:42]                                         - ERROR: 执行出错：'1' != '0'
+- 1
++ 0
+
+2020-09-16 13:34:09 api_logging.py my_log [line:42]                                         - ERROR: 执行出错：'1' != '0'
+- 1
++ 0
+
+2020-09-16 13:34:09 api_logging.py my_log [line:42]                                         - ERROR: 执行出错：'1' != '0'
+- 1
++ 0
+
+2020-09-16 13:34:10 api_logging.py my_log [line:42]                                         - ERROR: 执行出错：'1' != '0'
+- 1
++ 0
+
+2020-09-16 13:34:12 api_logging.py my_log [line:42]                                         - ERROR: 执行出错：'1' != '0'
+- 1
++ 0
+
+2020-09-16 13:34:13 api_logging.py my_log [line:42]                                         - ERROR: 执行出错：'1' != '0'
+- 1
++ 0
+
+Wed, 16 Sep 2020 13:53:04 api_logging.py <module> [line:15] heheheh1
+Wed, 16 Sep 2020 13:53:04 api_logging.py <module> [line:16] hahahah1
+Wed, 16 Sep 2020 13:56:41 api_logging.py <module> [line:15] heheheh1
+Wed, 16 Sep 2020 13:56:41 api_logging.py <module> [line:16] hahahah1
+Wed, 16 Sep 2020 13:56:41 run.py <module> [line:33] heheheh1
+Wed, 16 Sep 2020 13:58:22 http_request_ddt.py test_receipt [line:30] 执行出错： :: 1 != 0
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '1' != '0'
+- 1
++ 0
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\http_request_ddt.py", line 26, in test_receipt
+    self.assertEqual('1', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 1 != 0
+Wed, 16 Sep 2020 13:58:23 http_request_ddt.py test_receipt [line:30] 执行出错： :: 1 != 0
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '1' != '0'
+- 1
++ 0
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\http_request_ddt.py", line 26, in test_receipt
+    self.assertEqual('1', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 1 != 0
+Wed, 16 Sep 2020 13:58:24 http_request_ddt.py test_receipt [line:30] 执行出错： :: 1 != 0
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '1' != '0'
+- 1
++ 0
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\http_request_ddt.py", line 26, in test_receipt
+    self.assertEqual('1', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 1 != 0
+Wed, 16 Sep 2020 13:58:25 http_request_ddt.py test_receipt [line:30] 执行出错： :: 1 != 0
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '1' != '0'
+- 1
++ 0
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\http_request_ddt.py", line 26, in test_receipt
+    self.assertEqual('1', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 1 != 0
+Wed, 16 Sep 2020 13:58:26 http_request_ddt.py test_receipt [line:30] 执行出错： :: 1 != 0
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '1' != '0'
+- 1
++ 0
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\http_request_ddt.py", line 26, in test_receipt
+    self.assertEqual('1', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 1 != 0
+Wed, 16 Sep 2020 13:58:27 http_request_ddt.py test_receipt [line:30] 执行出错： :: 1 != 0
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '1' != '0'
+- 1
++ 0
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\http_request_ddt.py", line 26, in test_receipt
+    self.assertEqual('1', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 1 != 0
+Wed, 16 Sep 2020 13:58:50 http_request_ddt.py test_receipt [line:30] 执行出错：'1' != '0'
+- 1
++ 0
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\http_request_ddt.py", line 26, in test_receipt
+    self.assertEqual('1', res.json()['success'])
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '1' != '0'
+- 1
++ 0
+
+Wed, 16 Sep 2020 13:58:50 http_request_ddt.py test_receipt [line:30] 执行出错：'1' != '0'
+- 1
++ 0
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\http_request_ddt.py", line 26, in test_receipt
+    self.assertEqual('1', res.json()['success'])
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '1' != '0'
+- 1
++ 0
+
+Wed, 16 Sep 2020 13:58:51 http_request_ddt.py test_receipt [line:30] 执行出错：'1' != '0'
+- 1
++ 0
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\http_request_ddt.py", line 26, in test_receipt
+    self.assertEqual('1', res.json()['success'])
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '1' != '0'
+- 1
++ 0
+
+Wed, 16 Sep 2020 13:58:52 http_request_ddt.py test_receipt [line:30] 执行出错：'1' != '0'
+- 1
++ 0
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\http_request_ddt.py", line 26, in test_receipt
+    self.assertEqual('1', res.json()['success'])
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '1' != '0'
+- 1
++ 0
+
+Wed, 16 Sep 2020 13:58:52 http_request_ddt.py test_receipt [line:30] 执行出错：'1' != '0'
+- 1
++ 0
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\http_request_ddt.py", line 26, in test_receipt
+    self.assertEqual('1', res.json()['success'])
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '1' != '0'
+- 1
++ 0
+
+Wed, 16 Sep 2020 13:58:52 http_request_ddt.py test_receipt [line:30] 执行出错：'1' != '0'
+- 1
++ 0
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\http_request_ddt.py", line 26, in test_receipt
+    self.assertEqual('1', res.json()['success'])
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '1' != '0'
+- 1
++ 0
+
+Wed, 16 Sep 2020 14:04:45 http_request_ddt.py test_receipt [line:30] 执行出错：'1' != '0'
+- 1
++ 0
+
+Wed, 16 Sep 2020 14:04:46 http_request_ddt.py test_receipt [line:30] 执行出错：'1' != '0'
+- 1
++ 0
+
+Wed, 16 Sep 2020 14:04:46 http_request_ddt.py test_receipt [line:30] 执行出错：'1' != '0'
+- 1
++ 0
+
+Wed, 16 Sep 2020 14:04:47 http_request_ddt.py test_receipt [line:30] 执行出错：'1' != '0'
+- 1
++ 0
+
+Wed, 16 Sep 2020 14:04:47 http_request_ddt.py test_receipt [line:30] 执行出错：'1' != '0'
+- 1
++ 0
+
+Wed, 16 Sep 2020 14:04:48 http_request_ddt.py test_receipt [line:30] 执行出错：'1' != '0'
+- 1
++ 0
+
+Wed, 16 Sep 2020 14:22:06 http_request_ddt.py test_receipt [line:30] 执行出错：'0' != '1'
+- 0
++ 1
+
+Wed, 16 Sep 2020 14:22:06 http_request_ddt.py test_receipt [line:30] 执行出错：'0' != '1'
+- 0
++ 1
+
+Wed, 16 Sep 2020 14:22:07 http_request_ddt.py test_receipt [line:30] 执行出错：'0' != '1'
+- 0
++ 1
+
+Wed, 16 Sep 2020 14:22:07 http_request_ddt.py test_receipt [line:30] 执行出错：'0' != '1'
+- 0
++ 1
+
+Wed, 16 Sep 2020 14:47:30 http_request_ddt.py test_receipt [line:30] 执行出错：'0' != '1'
+- 0
++ 1
+
+Wed, 16 Sep 2020 14:47:30 http_request_ddt.py test_receipt [line:30] 执行出错：'0' != '1'
+- 0
++ 1
+
+Wed, 16 Sep 2020 14:47:30 http_request_ddt.py test_receipt [line:30] 执行出错：'0' != '1'
+- 0
++ 1
+
+Wed, 16 Sep 2020 14:47:30 http_request_ddt.py test_receipt [line:30] 执行出错：'0' != '1'
+- 0
++ 1
+
+Wed, 16 Sep 2020 19:56:45 api_logging.py <module> [line:15] heheheh1
+Fri, 18 Sep 2020 09:58:44 test_receipt.py test_receipt [line:57] 获取的结果是：操作成功
+Fri, 18 Sep 2020 09:58:45 test_receipt.py test_receipt [line:57] 获取的结果是：操作成功
+Fri, 18 Sep 2020 09:58:45 test_receipt.py test_receipt [line:57] 获取的结果是：操作成功
+Fri, 18 Sep 2020 09:58:46 test_receipt.py test_receipt [line:57] 获取的结果是：操作成功
+Fri, 18 Sep 2020 09:58:46 test_receipt.py test_receipt [line:57] 获取的结果是：操作成功
+Fri, 18 Sep 2020 09:58:46 test_receipt.py test_receipt [line:51] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 27, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 09:58:46 test_receipt.py test_receipt [line:57] 获取的结果是：会员卡不存在
+Fri, 18 Sep 2020 09:58:46 test_receipt.py test_receipt [line:51] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 27, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 09:58:47 test_receipt.py test_receipt [line:57] 获取的结果是：会员卡不存在
+Fri, 18 Sep 2020 09:58:47 test_receipt.py test_receipt [line:51] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 27, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 09:58:47 test_receipt.py test_receipt [line:57] 获取的结果是：会员卡不存在
+Fri, 18 Sep 2020 10:06:00 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:06:01 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:06:01 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:06:02 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:06:02 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:06:02 test_receipt.py test_receipt [line:49] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 27, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 10:06:02 test_receipt.py test_receipt [line:54] 获取的结果是：会员卡不存在
+Fri, 18 Sep 2020 10:06:02 test_receipt.py test_receipt [line:49] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 27, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 10:06:02 test_receipt.py test_receipt [line:54] 获取的结果是：会员卡不存在
+Fri, 18 Sep 2020 10:06:03 test_receipt.py test_receipt [line:49] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 27, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 10:06:03 test_receipt.py test_receipt [line:54] 获取的结果是：会员卡不存在
+Fri, 18 Sep 2020 10:18:02 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:18:04 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:18:04 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:18:05 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:18:05 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:18:05 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:18:06 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:18:06 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:23:34 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:23:35 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:23:35 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:23:36 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:23:36 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:23:36 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:23:37 test_receipt.py test_receipt [line:54] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:23:38 test_receipt.py test_receipt [line:49] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 27, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 10:23:38 test_receipt.py test_receipt [line:54] 获取的结果是：会员卡删除失败
+Fri, 18 Sep 2020 10:45:20 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:45:21 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:45:21 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:45:22 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:45:22 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:45:23 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:45:23 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:45:23 test_receipt.py test_receipt [line:41] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 28, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 10:45:23 test_receipt.py test_receipt [line:46] 获取的结果是：会员卡删除失败
+Fri, 18 Sep 2020 10:59:05 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:59:05 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:59:06 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:59:07 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:59:08 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 10:59:10 test_receipt.py test_receipt [line:41] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 28, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 10:59:10 test_receipt.py test_receipt [line:46] 获取的结果是：会员卡不可删除
+Fri, 18 Sep 2020 10:59:10 test_receipt.py test_receipt [line:41] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 28, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 10:59:10 test_receipt.py test_receipt [line:46] 获取的结果是：会员卡删除失败
+Fri, 18 Sep 2020 10:59:10 test_receipt.py test_receipt [line:41] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 28, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 10:59:10 test_receipt.py test_receipt [line:46] 获取的结果是：会员卡删除失败
+Fri, 18 Sep 2020 11:15:50 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 11:15:51 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 11:15:51 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 11:15:53 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 11:15:53 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 11:15:53 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 11:15:53 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 11:15:54 test_receipt.py test_receipt [line:41] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 28, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 11:15:54 test_receipt.py test_receipt [line:46] 获取的结果是：会员卡删除失败
+Fri, 18 Sep 2020 11:16:32 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 11:16:33 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 11:16:33 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 11:16:34 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 11:16:34 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 11:16:35 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 11:16:35 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 11:16:35 test_receipt.py test_receipt [line:41] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 28, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 11:16:35 test_receipt.py test_receipt [line:46] 获取的结果是：会员卡删除失败
+Fri, 18 Sep 2020 13:16:24 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 13:16:25 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 13:16:25 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 13:16:26 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 13:16:26 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 13:16:27 test_receipt.py test_receipt [line:41] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 28, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 13:16:27 test_receipt.py test_receipt [line:46] 获取的结果是：会员卡不可删除
+Fri, 18 Sep 2020 13:16:27 test_receipt.py test_receipt [line:41] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 28, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 13:16:28 test_receipt.py test_receipt [line:46] 获取的结果是：会员卡不可删除
+Fri, 18 Sep 2020 13:16:28 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 13:32:50 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 13:32:50 test_receipt.py test_receipt [line:41] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 28, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 13:32:50 test_receipt.py test_receipt [line:46] 获取的结果是：顾客已购买过此卡，请勿重复购买
+Fri, 18 Sep 2020 13:32:50 test_receipt.py test_receipt [line:41] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 28, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 13:32:50 test_receipt.py test_receipt [line:46] 获取的结果是：顾客已购买过此卡，请勿重复购买
+Fri, 18 Sep 2020 13:32:51 test_receipt.py test_receipt [line:41] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 28, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 13:32:51 test_receipt.py test_receipt [line:46] 获取的结果是：顾客已购买过此卡，请勿重复购买
+Fri, 18 Sep 2020 13:32:51 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 13:32:51 test_receipt.py test_receipt [line:41] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 28, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 13:32:51 test_receipt.py test_receipt [line:46] 获取的结果是：会员卡不可删除
+Fri, 18 Sep 2020 13:32:51 test_receipt.py test_receipt [line:41] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 28, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 13:32:51 test_receipt.py test_receipt [line:46] 获取的结果是：会员卡不可删除
+Fri, 18 Sep 2020 13:32:52 test_receipt.py test_receipt [line:41] 执行出错： :: 0 != 1
+Traceback (most recent call last):
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RTS_Auto\tools\test_receipt.py", line 28, in test_receipt
+    self.assertEqual('0', res.json()['success'])
+  File "E:\Program Files\JetBrains\PyCharm Community Edition 2018.2.2\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1
+Fri, 18 Sep 2020 13:32:52 test_receipt.py test_receipt [line:46] 获取的结果是：会员卡删除失败
+Fri, 18 Sep 2020 15:02:38 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:02:39 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:02:40 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:02:41 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:02:41 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:02:41 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:02:43 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:02:43 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:05:44 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:05:45 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:05:45 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:05:46 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:05:46 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:05:48 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:05:48 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:05:49 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:12:03 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:12:04 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:12:04 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:12:05 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:12:05 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:12:06 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:12:06 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:12:07 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:12:07 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:12:08 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:12:08 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:12:11 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:12:11 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:12:12 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:12:12 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:12:12 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:12:13 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
+Fri, 18 Sep 2020 15:12:14 test_receipt.py test_receipt [line:46] 获取的结果是：操作成功
