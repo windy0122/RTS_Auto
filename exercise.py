@@ -249,268 +249,271 @@
 # #     '''
 #
 #
-import requests
-import json
+# import requests
+# import json
+# #
+# # url = 'https://uatleague.round-table-union.com/api/rts/member/membershipCard/deleteMembershipCard/V141'
+# #
+# # header = {'content-type': 'application/json',
+# #           'version': '1.4.1',
+# #           'platform': 'iOS',
+# #           'tk': '4b755461-1bfa-4f3d-9945-5ce7f46aa105'}
+# #
+# # data = {
+# #          "customerId": "463765417308680192",
+# #          "customerType": "0",
+# #          "receiptItem": [{
+# #           "serviceEmployee": [],
+# #           "itemSubName": "洗洗洗洗",
+# #           "itemName": "洗吹",
+# #           "itemCount": 1,
+# #           "itemPrice": "20.00",
+# #           "itemSubId": "463767356746289152",
+# #           "itemNameId": "5",
+# #           "countingPayment": [{
+# #            "customerCardId": "503612192538357760",
+# #            "cardType": "2",
+# #            "cardCount": "1"
+# #           }]
+# #          }],
+# #          "gender": "0",
+# #          "receiptPayment": [],
+# #          "billingTime": 1600237002307.178
+# # }
+# #
 #
-# url = 'https://uatleague.round-table-union.com/api/rts/member/membershipCard/deleteMembershipCard/V141'
-#
-# header = {'content-type': 'application/json',
-#           'version': '1.4.1',
-#           'platform': 'iOS',
-#           'tk': '4b755461-1bfa-4f3d-9945-5ce7f46aa105'}
-#
-# data = {
-#          "customerId": "463765417308680192",
-#          "customerType": "0",
-#          "receiptItem": [{
-#           "serviceEmployee": [],
-#           "itemSubName": "洗洗洗洗",
-#           "itemName": "洗吹",
-#           "itemCount": 1,
-#           "itemPrice": "20.00",
-#           "itemSubId": "463767356746289152",
-#           "itemNameId": "5",
-#           "countingPayment": [{
-#            "customerCardId": "503612192538357760",
-#            "cardType": "2",
-#            "cardCount": "1"
-#           }]
-#          }],
-#          "gender": "0",
-#          "receiptPayment": [],
-#          "billingTime": 1600237002307.178
-# }
-#
-
-# payload = {'membershipCardId': '504291768767737856'}
-#
-# r = requests.get(url, headers=header, params=payload)
+# # payload = {'membershipCardId': '504291768767737856'}
+# #
+# # r = requests.get(url, headers=header, params=payload)
+# # # #
+# # # res = json.loads(r.text)
+# # # print(payload)
+# # print(r.url)
+# # print(r.json())
+# # for i in res['val']:
+# #     print(i['cardType'])
+# #
+# # # for i in r.json()['val']:
+# # #     if i['cardType'] == '1':
+# # #         print('true')
+# # #     else:
+# # #         print('false')
+# #
+# # # Li = [1, 2, 3, 4, 5]
+# # # n = 6
+# # # if n in Li:
+# # #     print(n)
+# #
+# #
+# # # res = {
+# # #         "msg": "操作成功",
+# # #         "requestUUID": "JY-7959f4aae4d63b20e69ccd77eb342fb7",
+# # #         "responseTime": "2020-09-17 11:27:59",
+# # #         "ret": "0",
+# # #         "success": "0",
+# # #         "val": [{
+# # #             "addCashEventStatus": "0",
+# # #             "applicableItemId": "5",
+# # #             "applicableItemName": "洗吹",
+# # #             "applicableSpecificItemId": "",
+# # #             "applicableSpecificItemName": "全部洗吹项目",
+# # #             "averagePrice": "20.00",
+# # #             "balanceAmount": "0",
+# # #             "balanceGiftAmount": "0",
+# # #             "balanceRechargeAmount": "0",
+# # #             "balanceTimes": "100",
+# # #             "cardName": "计次卡测试",
+# # #             "cardType": "2",
+# # #             "deleteYn": "1",
+# # #             "enjoyDiscount": "",
+# # #             "expireTime": "253402271999000",
+# # #             "giftAmount": "",
+# # #             "lastAveragePrice": "20.00",
+# # #             "memberCardTemplateId": "503611922391625728",
+# # #             "membershipCardCode": "VIP00030",
+# # #             "membershipCardId": "503931087002398720",
+# # #             "membershipCardStatus": "1",
+# # #             "purchasePrice": "2000.0000",
+# # #             "purchaseTimes": "100",
+# # #             "rechargeAmount": "",
+# # #             "upgradeYn": "0",
+# # #             "useMonth": "9999"
+# # #         }, {
+# # #             "addCashEventStatus": "0",
+# # #             "applicableItemId": "",
+# # #             "applicableItemName": "",
+# # #             "applicableSpecificItemId": "",
+# # #             "applicableSpecificItemName": "",
+# # #             "averagePrice": "",
+# # #             "balanceAmount": "0",
+# # #             "balanceGiftAmount": "0",
+# # #             "balanceRechargeAmount": "0",
+# # #             "balanceTimes": "0",
+# # #             "cardName": "年卡1",
+# # #             "cardType": "3",
+# # #             "deleteYn": "1",
+# # #             "enjoyDiscount": "95",
+# # #             "expireTime": "1631807999000",
+# # #             "giftAmount": "",
+# # #             "lastAveragePrice": "",
+# # #             "memberCardTemplateId": "463767922616791040",
+# # #             "membershipCardCode": "VIP00031",
+# # #             "membershipCardId": "503931208406528000",
+# # #             "membershipCardStatus": "1",
+# # #             "purchasePrice": "1000.0000",
+# # #             "purchaseTimes": "0",
+# # #             "rechargeAmount": "",
+# # #             "upgradeYn": "0",
+# # #             "useMonth": "12"
+# # #         }]
+# # #     }
 # # #
-# # res = json.loads(r.text)
-# # print(payload)
-# print(r.url)
-# print(r.json())
-# for i in res['val']:
-#     print(i['cardType'])
-#
-# # for i in r.json()['val']:
-# #     if i['cardType'] == '1':
-# #         print('true')
-# #     else:
-# #         print('false')
-#
-# # Li = [1, 2, 3, 4, 5]
-# # n = 6
-# # if n in Li:
-# #     print(n)
+# # # for i in res['val']:
+# # #     print(i['cardType'])
 #
 #
-# # res = {
-# #         "msg": "操作成功",
-# #         "requestUUID": "JY-7959f4aae4d63b20e69ccd77eb342fb7",
-# #         "responseTime": "2020-09-17 11:27:59",
-# #         "ret": "0",
-# #         "success": "0",
-# #         "val": [{
-# #             "addCashEventStatus": "0",
-# #             "applicableItemId": "5",
-# #             "applicableItemName": "洗吹",
-# #             "applicableSpecificItemId": "",
-# #             "applicableSpecificItemName": "全部洗吹项目",
-# #             "averagePrice": "20.00",
-# #             "balanceAmount": "0",
-# #             "balanceGiftAmount": "0",
-# #             "balanceRechargeAmount": "0",
-# #             "balanceTimes": "100",
-# #             "cardName": "计次卡测试",
-# #             "cardType": "2",
-# #             "deleteYn": "1",
-# #             "enjoyDiscount": "",
-# #             "expireTime": "253402271999000",
-# #             "giftAmount": "",
-# #             "lastAveragePrice": "20.00",
-# #             "memberCardTemplateId": "503611922391625728",
-# #             "membershipCardCode": "VIP00030",
-# #             "membershipCardId": "503931087002398720",
-# #             "membershipCardStatus": "1",
-# #             "purchasePrice": "2000.0000",
-# #             "purchaseTimes": "100",
-# #             "rechargeAmount": "",
-# #             "upgradeYn": "0",
-# #             "useMonth": "9999"
+# from tools.project_path import *
+# from tools.do_excel import DoExcel
+# import logging
+#
+# # res_val2 = {
+# #         'msg': '操作成功',
+# #         'requestUUID': 'JY-0278a8f73dab0a6a746652f59ceab323',
+# #         'responseTime': '2020-09-18 10:06:01',
+# #         'ret': '0',
+# #         'success': '0',
+# #         'val': [{
+# #             'addCashEventStatus': '0',
+# #             'applicableItemId': '',
+# #             'applicableItemName': '',
+# #             'applicableSpecificItemId': '',
+# #             'applicableSpecificItemName': '',
+# #             'averagePrice': '',
+# #             'balanceAmount': '1000.0000',
+# #             'balanceGiftAmount': '0.0000',
+# #             'balanceRechargeAmount': '1000.0000',
+# #             'balanceTimes': '',
+# #             'cardName': '储值卡xyz',
+# #             'cardType': '1',
+# #             'deleteYn': '1',
+# #             'enjoyDiscount': '70',
+# #             'expireTime': '253402271999000',
+# #             'giftAmount': '0.0000',
+# #             'lastAveragePrice': '',
+# #             'memberCardTemplateId': '465599316220481536',
+# #             'membershipCardCode': 'VIP00134',
+# #             'membershipCardId': '504274016766128128',
+# #             'membershipCardStatus': '1',
+# #             'purchasePrice': '',
+# #             'purchaseTimes': '',
+# #             'rechargeAmount': '1000.0000',
+# #             'upgradeYn': '1',
+# #             'useMonth': '9999'
 # #         }, {
-# #             "addCashEventStatus": "0",
-# #             "applicableItemId": "",
-# #             "applicableItemName": "",
-# #             "applicableSpecificItemId": "",
-# #             "applicableSpecificItemName": "",
-# #             "averagePrice": "",
-# #             "balanceAmount": "0",
-# #             "balanceGiftAmount": "0",
-# #             "balanceRechargeAmount": "0",
-# #             "balanceTimes": "0",
-# #             "cardName": "年卡1",
-# #             "cardType": "3",
-# #             "deleteYn": "1",
-# #             "enjoyDiscount": "95",
-# #             "expireTime": "1631807999000",
-# #             "giftAmount": "",
-# #             "lastAveragePrice": "",
-# #             "memberCardTemplateId": "463767922616791040",
-# #             "membershipCardCode": "VIP00031",
-# #             "membershipCardId": "503931208406528000",
-# #             "membershipCardStatus": "1",
-# #             "purchasePrice": "1000.0000",
-# #             "purchaseTimes": "0",
-# #             "rechargeAmount": "",
-# #             "upgradeYn": "0",
-# #             "useMonth": "12"
+# #             'addCashEventStatus': '0',
+# #             'applicableItemId': '5',
+# #             'applicableItemName': '洗吹',
+# #             'applicableSpecificItemId': '',
+# #             'applicableSpecificItemName': '全部洗吹项目',
+# #             'averagePrice': '20.00',
+# #             'balanceAmount': '0',
+# #             'balanceGiftAmount': '0',
+# #             'balanceRechargeAmount': '0',
+# #             'balanceTimes': '100',
+# #             'cardName': '计次卡测试',
+# #             'cardType': '2',
+# #             'deleteYn': '1',
+# #             'enjoyDiscount': '',
+# #             'expireTime': '253402271999000',
+# #             'giftAmount': '',
+# #             'lastAveragePrice': '20.00',
+# #             'memberCardTemplateId': '503611922391625728',
+# #             'membershipCardCode': 'VIP00135',
+# #             'membershipCardId': '504274018691313664',
+# #             'membershipCardStatus': '1',
+# #             'purchasePrice': '2000.0000',
+# #             'purchaseTimes': '100',
+# #             'rechargeAmount': '',
+# #             'upgradeYn': '0',
+# #             'useMonth': '9999'
+# #         }, {
+# #             'addCashEventStatus': '0',
+# #             'applicableItemId': '',
+# #             'applicableItemName': '',
+# #             'applicableSpecificItemId': '',
+# #             'applicableSpecificItemName': '',
+# #             'averagePrice': '',
+# #             'balanceAmount': '0',
+# #             'balanceGiftAmount': '0',
+# #             'balanceRechargeAmount': '0',
+# #             'balanceTimes': '0',
+# #             'cardName': '年卡1',
+# #             'cardType': '3',
+# #             'deleteYn': '1',
+# #             'enjoyDiscount': '95',
+# #             'expireTime': '1631807999000',
+# #             'giftAmount': '',
+# #             'lastAveragePrice': '',
+# #             'memberCardTemplateId': '463767922616791040',
+# #             'membershipCardCode': 'VIP00136',
+# #             'membershipCardId': '504274020767494144',
+# #             'membershipCardStatus': '1',
+# #             'purchasePrice': '1000.0000',
+# #             'purchaseTimes': '0',
+# #             'rechargeAmount': '',
+# #             'upgradeYn': '0',
+# #             'useMonth': '12'
 # #         }]
 # #     }
 # #
-# # for i in res['val']:
-# #     print(i['cardType'])
-
-
-from tools.project_path import *
-from tools.do_excel import DoExcel
-import logging
-
-# res_val2 = {
-#         'msg': '操作成功',
-#         'requestUUID': 'JY-0278a8f73dab0a6a746652f59ceab323',
-#         'responseTime': '2020-09-18 10:06:01',
-#         'ret': '0',
-#         'success': '0',
-#         'val': [{
-#             'addCashEventStatus': '0',
-#             'applicableItemId': '',
-#             'applicableItemName': '',
-#             'applicableSpecificItemId': '',
-#             'applicableSpecificItemName': '',
-#             'averagePrice': '',
-#             'balanceAmount': '1000.0000',
-#             'balanceGiftAmount': '0.0000',
-#             'balanceRechargeAmount': '1000.0000',
-#             'balanceTimes': '',
-#             'cardName': '储值卡xyz',
-#             'cardType': '1',
-#             'deleteYn': '1',
-#             'enjoyDiscount': '70',
-#             'expireTime': '253402271999000',
-#             'giftAmount': '0.0000',
-#             'lastAveragePrice': '',
-#             'memberCardTemplateId': '465599316220481536',
-#             'membershipCardCode': 'VIP00134',
-#             'membershipCardId': '504274016766128128',
-#             'membershipCardStatus': '1',
-#             'purchasePrice': '',
-#             'purchaseTimes': '',
-#             'rechargeAmount': '1000.0000',
-#             'upgradeYn': '1',
-#             'useMonth': '9999'
-#         }, {
-#             'addCashEventStatus': '0',
-#             'applicableItemId': '5',
-#             'applicableItemName': '洗吹',
-#             'applicableSpecificItemId': '',
-#             'applicableSpecificItemName': '全部洗吹项目',
-#             'averagePrice': '20.00',
-#             'balanceAmount': '0',
-#             'balanceGiftAmount': '0',
-#             'balanceRechargeAmount': '0',
-#             'balanceTimes': '100',
-#             'cardName': '计次卡测试',
-#             'cardType': '2',
-#             'deleteYn': '1',
-#             'enjoyDiscount': '',
-#             'expireTime': '253402271999000',
-#             'giftAmount': '',
-#             'lastAveragePrice': '20.00',
-#             'memberCardTemplateId': '503611922391625728',
-#             'membershipCardCode': 'VIP00135',
-#             'membershipCardId': '504274018691313664',
-#             'membershipCardStatus': '1',
-#             'purchasePrice': '2000.0000',
-#             'purchaseTimes': '100',
-#             'rechargeAmount': '',
-#             'upgradeYn': '0',
-#             'useMonth': '9999'
-#         }, {
-#             'addCashEventStatus': '0',
-#             'applicableItemId': '',
-#             'applicableItemName': '',
-#             'applicableSpecificItemId': '',
-#             'applicableSpecificItemName': '',
-#             'averagePrice': '',
-#             'balanceAmount': '0',
-#             'balanceGiftAmount': '0',
-#             'balanceRechargeAmount': '0',
-#             'balanceTimes': '0',
-#             'cardName': '年卡1',
-#             'cardType': '3',
-#             'deleteYn': '1',
-#             'enjoyDiscount': '95',
-#             'expireTime': '1631807999000',
-#             'giftAmount': '',
-#             'lastAveragePrice': '',
-#             'memberCardTemplateId': '463767922616791040',
-#             'membershipCardCode': 'VIP00136',
-#             'membershipCardId': '504274020767494144',
-#             'membershipCardStatus': '1',
-#             'purchasePrice': '1000.0000',
-#             'purchaseTimes': '0',
-#             'rechargeAmount': '',
-#             'upgradeYn': '0',
-#             'useMonth': '12'
-#         }]
-#     }
+# # res_val = {
+# #                 'msg': '操作成功',
+# #                 'requestUUID': 'JY-3f2cd2afd6422b3e14c59db75ef1101c',
+# #                 'responseTime': '2020-09-18 10:59:04',
+# #                 'ret': '0',
+# #                 'success': '0',
+# #                 'val': {
+# #                     'id': '504287373267169280'
+# #                 }
+# #             }
+# #
+# # # print('val' in res_val_1 and 'cardType' in res_val_1['val'][0])
+# # if isinstance(res_val['val'], list):
+# #     for i in range(len(res_val['val'])):
+# #         if res_val['val'][i]['cardType'] == '1':
+# #             print('hahah')
 #
-# res_val = {
-#                 'msg': '操作成功',
-#                 'requestUUID': 'JY-3f2cd2afd6422b3e14c59db75ef1101c',
-#                 'responseTime': '2020-09-18 10:59:04',
-#                 'ret': '0',
-#                 'success': '0',
-#                 'val': {
-#                     'id': '504287373267169280'
-#                 }
-#             }
+# # if isinstance(res_val['val'], list):
+# #     print('是个list')
+# # else:
+# #     print('不是list')
 #
-# # print('val' in res_val_1 and 'cardType' in res_val_1['val'][0])
-# if isinstance(res_val['val'], list):
-#     for i in range(len(res_val['val'])):
-#         if res_val['val'][i]['cardType'] == '1':
-#             print('hahah')
+#
+# # for i in range(len(res_val['val'])):
+# #     if res_val['val'][i]['cardType'] == '1':
+# #         DoExcel.write_back_init(test_data_path, 'init', 2, res_val['val'][i]['membershipCardId'])
+# #     elif res_val['val'][i]['cardType'] == '2':
+# #         DoExcel.write_back_init(test_data_path, 'init', 3, res_val['val'][i]['membershipCardId'])
+# #     elif res_val['val'][i]['cardType'] == '3':
+# #         DoExcel.write_back_init(test_data_path, 'init', 4, res_val['val'][i]['membershipCardId'])
+# #     else:
+# #         logging.info('顾客没有卡')
+#
+#
+# import requests
+# from tools.do_excel_for import DoExcelFor
+#
+#
+# def get_excel_data():
+#     test_data = DoExcelFor.get_data(test_data_path)
+#     print(test_data)
 
-# if isinstance(res_val['val'], list):
-#     print('是个list')
-# else:
-#     print('不是list')
-
-
-# for i in range(len(res_val['val'])):
-#     if res_val['val'][i]['cardType'] == '1':
-#         DoExcel.write_back_init(test_data_path, 'init', 2, res_val['val'][i]['membershipCardId'])
-#     elif res_val['val'][i]['cardType'] == '2':
-#         DoExcel.write_back_init(test_data_path, 'init', 3, res_val['val'][i]['membershipCardId'])
-#     elif res_val['val'][i]['cardType'] == '3':
-#         DoExcel.write_back_init(test_data_path, 'init', 4, res_val['val'][i]['membershipCardId'])
-#     else:
-#         logging.info('顾客没有卡')
-
-
-import requests
-from tools.do_excel_for import DoExcelFor
-
-
-def get_excel_data():
-    test_data = DoExcelFor.get_data(test_data_path)
-    print(test_data)
-
-
-
-
+# import time
+# import datetime
+#
+# print(round(time.time() * 1000))
+#
+# print(datetime.datetime.now())
 
 
 

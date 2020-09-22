@@ -1,5 +1,4 @@
 import logging
-
 import MySQLdb
 import redis
 import random
@@ -17,8 +16,9 @@ class StartBefore(object):
     # shop_customer = None
 
     # 登录获取店铺tk和shop_id
-    @staticmethod
-    def get_token():
+    # 将token写入init表中
+    # @staticmethod
+    def get_token(self):
         url = 'https://uatleague.round-table-union.com/api/rts/base/home/login/V141'
 
         header = {'content-type': 'application/json',
@@ -38,12 +38,14 @@ class StartBefore(object):
                         "applicationId": "AjwG1Pb2_9CZbEZ3QnWIc1f7HRbPBXo6-ismtWk5Y27H"
                     }
 
-        r = requests.post(url, headers=header, data=json.dumps(payload))
+        # urllib3.disable_warnings()
+        r = requests.post(url, headers=header, data=json.dumps(payload), verify=False)
         res = r.json()
         global shop_tk
         global shop_id
         shop_tk = res['val']['tk']
         shop_id = res['val']['shopId']
+        self.write_back_init(test_data_path, 'init', 6, shop_tk)
         return shop_tk, shop_id
 
     # 查询店铺顾客手机号
@@ -97,35 +99,55 @@ class StartBefore(object):
         else:
             return phone_num
 
-    # 获取新建顾客id
+    # 获取init表中数据(1、顾客id   2、储值卡id   3、计次卡id    4、年卡id    5、员工id    6、店铺tk)
     @staticmethod
-    def get_customer_id():
+    def get_data_init(num):
         wb = load_workbook(test_data_path)
         sheet = wb['init']
-        customer_id = sheet.cell(2, 1).value
-        return customer_id
+        init_data = sheet.cell(2, num).value
+        return init_data
 
-    @staticmethod
-    def get_stored_card_id():
-        wb = load_workbook(test_data_path)
-        sheet = wb['init']
-        stored_card_id = sheet.cell(2, 2).value
-        return stored_card_id
+    # # 获取新建顾客id
+    # @staticmethod
+    # def get_customer_id():
+    #     wb = load_workbook(test_data_path)
+    #     sheet = wb['init']
+    #     customer_id = sheet.cell(2, 1).value
+    #     return customer_id
+    #
+    # # 获取顾客储值卡id
+    # @staticmethod
+    # def get_stored_card_id():
+    #     wb = load_workbook(test_data_path)
+    #     sheet = wb['init']
+    #     stored_card_id = sheet.cell(2, 2).value
+    #     return stored_card_id
+    #
+    # # 获取顾客计次卡id
+    # @staticmethod
+    # def get_time_card_id():
+    #     wb = load_workbook(test_data_path)
+    #     sheet = wb['init']
+    #     time_card_id = sheet.cell(2, 3).value
+    #     return time_card_id
+    #
+    # # 获取顾客年卡id
+    # @staticmethod
+    # def get_year_card_id():
+    #     wb = load_workbook(test_data_path)
+    #     sheet = wb['init']
+    #     year_card_id = sheet.cell(2, 4).value
+    #     return year_card_id
+    #
+    # # 获取员工id
+    # @staticmethod
+    # def get_employee_id():
+    #     wb = load_workbook(test_data_path)
+    #     sheet = wb['init']
+    #     employee_id = sheet.cell(2, 5).value
+    #     return employee_id
 
-    @staticmethod
-    def get_time_card_id():
-        wb = load_workbook(test_data_path)
-        sheet = wb['init']
-        time_card_id = sheet.cell(2, 3).value
-        return time_card_id
-
-    @staticmethod
-    def get_year_card_id():
-        wb = load_workbook(test_data_path)
-        sheet = wb['init']
-        year_card_id = sheet.cell(2, 4).value
-        return year_card_id
-
+    # 写入result(返回数据)，写入TestResult(pass or failed)
     @staticmethod
     def write_back(file_name, sheet_name, i, result, TestResult):
         wb = load_workbook(file_name)
@@ -134,6 +156,7 @@ class StartBefore(object):
         sheet.cell(i, 8).value = TestResult
         wb.save(file_name)
 
+    # 写入数据到init表中
     @staticmethod
     def write_back_init(file_name, sheet_name, i, result):
         wb = load_workbook(file_name)
@@ -141,6 +164,7 @@ class StartBefore(object):
         sheet.cell(2, i).value = result
         wb.save(file_name)
 
+    # 将顾客卡id写入到init表中
     def write_customer_card_id(self, res):
         if isinstance(res['val'], list):
             for i in range(len(res['val'])):
@@ -153,13 +177,18 @@ class StartBefore(object):
                 else:
                     logging.info('顾客没有卡')
 
+    # 将新建的员工id写入到init表中
+    def write_employee_id(self, res):
+        if isinstance(res['val'], list) and len(res['val']) > 1:
+            self.write_back_init(test_data_path, 'init', 5, res['val'][1]['employeeId'])
+
 
 if __name__ == '__main__':
     start = StartBefore()
     # print(start.get_token())
     # print(start.get_phone_num())
     # print(start.new_customer_phone())
-    # print(start.get_stored_card_id())
+    print(start.get_data_init(6))
 
 
 
